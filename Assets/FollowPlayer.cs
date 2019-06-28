@@ -7,7 +7,8 @@ public class FollowPlayer : MonoBehaviour
     
     void Update()
     {
-        transform.position = player.position + offset;
+        // transform.position = player.position + offset;
         // Debug.Log(player.position);
+        transform.LookAt(player.position);
     }
 }
